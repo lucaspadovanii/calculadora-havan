@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Formulário</title>
+</head> 
+<body>
+  <div style="align-items: left;">
+    <a href="index.html" class="link">< Início </a>
+  </div>
+  <h1>Formulário</h1>
+  <p>Escolha a moeda e os valores para obter a taxa de câmbio</p>
+  
+  <form action="result.html">
+    <input class="name" type="text" id="name" placeholder=" Nome">
+
+    <!-- primeiro item -->
+    <div class="currency">
+      <select id="currency-one">
+        <option value="BRL">BRL</option>
+        <option value="USD">USD</option>
+      </select>
+      <input type="number" id="amount-one" value="0">
+    </div>
+
+    <!-- botão para alternar -->
+    <div class="swap-rate-container">
+      <button class="btn" id="swap">Trocar</button>
+      <div class="rate" id="rate"></div>
+    </div>
+
+      <!-- Segundo item -->
+    <div class="currency">
+      <select id="currency-two">
+        <option value="BRL">BRL</option>
+        <option value="USD">USD</option>
+      </select>
+      <input type="number" id="amount-two" disabled>
+    </div>
+  </form>
+  <a href="result.html" class="send" id="send">Enviar</a>
+    
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+</body>
+</html>
